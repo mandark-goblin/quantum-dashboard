@@ -1,0 +1,93 @@
+<div class="card">
+
+  <h1>{{ patient.f_name  }} {{ patient.l_name  }}</h1>  
+  <p>age: {{ patient.age  }}</p>
+  <p>session# {{patient.session_count}}</p>
+
+
+  <h3>History</h3>  
+
+  <ul *ngFor = "let i of patient.history">
+    <li>{{ i }}</li>
+  </ul>
+
+</div>
+
+
+<div class="card">
+
+  <h3>Symptoms</h3>
+  <ul *ngFor ="let i of patient.symptoms">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>LifeStyle</h3>
+  <ul *ngFor ="let i of patient.lifestyle">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Water</h3>
+  <ul *ngFor ="let i of patient.water">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Exercise</h3>
+  <ul *ngFor ="let i of patient.exercise">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Work</h3>
+  <ul *ngFor ="let i of patient.work">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Stress</h3>
+  <ul *ngFor ="let i of patient.stress">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Medications</h3>
+  <ul *ngFor ="let i of patient.medications">
+    <li>{{ i }}</li>
+  </ul>
+
+
+</div>
+
+<div class="card">
+
+  <h3>Conductivity</h3>
+    <p>{{ patient.conductivity }}</p>
+
+  <h3>Findings</h3>
+  <ul *ngFor ="let i of patient.findings">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Diet</h3>
+  <ul *ngFor ="let i of patient.diet">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Food Restricions</h3>
+  <ul *ngFor ="let i of patient.food_restrictions">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Work</h3>
+  <ul *ngFor ="let i of patient.work">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Stress</h3>
+  <ul *ngFor ="let i of patient.stress">
+    <li>{{ i }}</li>
+  </ul>
+
+  <h3>Medications</h3>
+  <ul *ngFor ="let i of patient.medications">
+    <li>{{ i }}</li>
+  </ul>
+
+
+</div>

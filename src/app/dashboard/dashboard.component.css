@@ -1,0 +1,11 @@
+li {
+  list-style-type: none;
+}
+
+.card {
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
