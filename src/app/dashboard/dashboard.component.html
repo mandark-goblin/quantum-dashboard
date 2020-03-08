@@ -1,14 +1,27 @@
 <div class="card">
 
-  <h1>{{ patient.f_name  }} {{ patient.l_name  }}</h1>  
-  <p>age: {{ patient.age  }}</p>
-  <p>session# {{patient.session_count}}</p>
+  <h1>{{ patient.f_name }} {{ patient.l_name }}</h1>  
+  <div class="flex">
+    <p class="sub-text">Age: {{ patient.age }}</p>
+    <p class="sub-text">Session# {{ patient.session_count }}</p>
+  </div>
 
+  <button class="action-btn">Reassesment</button>
 
-  <h3>History</h3>  
+</div>
 
-  <ul *ngFor = "let i of patient.history">
-    <li>{{ i }}</li>
+<div class="card">
+
+  <h2>History</h2>  
+
+  <ul>
+    <li class="bubble" *ngFor="let i of patient.history">{{ i }}</li>
+  </ul>
+
+  <ul>
+    <li class="bubble sub-bubble" *ngFor="let q of p_questions">
+      <span>{{ q }}</span>
+    </li>
   </ul>
 
 </div>
@@ -17,40 +30,45 @@
 <div class="card">
 
   <h3>Symptoms</h3>
-  <ul *ngFor ="let i of patient.symptoms">
-    <li>{{ i }}</li>
+  <ul>
+    <li class="bubble" *ngFor ="let i of patient.symptoms">{{ i }}</li>
   </ul>
 
-  <h3>LifeStyle</h3>
-  <ul *ngFor ="let i of patient.lifestyle">
-    <li>{{ i }}</li>
-  </ul>
+</div>
 
-  <h3>Water</h3>
-  <ul *ngFor ="let i of patient.water">
-    <li>{{ i }}</li>
-  </ul>
+<div class="card">
 
-  <h3>Exercise</h3>
-  <ul *ngFor ="let i of patient.exercise">
-    <li>{{ i }}</li>
-  </ul>
+  <h2>Lifestyle</h2>
 
-  <h3>Work</h3>
-  <ul *ngFor ="let i of patient.work">
-    <li>{{ i }}</li>
-  </ul>
+  <div class="flex capsule ">
+    <h3 class="c-blue">Water</h3>
+    <ul><li *ngFor ="let i of patient.water">{{ i }}</li></ul>
+  </div>
 
-  <h3>Stress</h3>
-  <ul *ngFor ="let i of patient.stress">
-    <li>{{ i }}</li>
-  </ul>
+  <div class="flex capsule">
+    <h3 class="c-blue">Exercise</h3>
+    <ul><li *ngFor ="let i of patient.exercise">{{ i }}</li></ul>
+  </div>
 
-  <h3>Medications</h3>
-  <ul *ngFor ="let i of patient.medications">
-    <li>{{ i }}</li>
-  </ul>
+  <div class="flex capsule">
+    <h3 class="c-blue">Work</h3>
+    <ul><li *ngFor ="let i of patient.work">{{ i }}</li></ul>
+  </div>
 
+  <div class="flex capsule">
+    <h3 class="c-blue">Stress</h3>
+    <ul><li *ngFor ="let i of patient.stress">{{ i }}</li></ul>
+  </div>
+
+  <div class="flex capsule">
+    <h3 class="c-blue">Sleep</h3>
+    <ul><li *ngFor ="let i of patient.sleep">{{ i }}</li></ul>
+  </div>
+
+  <div class="flex capsule">
+    <h3 class="c-blue">Medications</h3>
+    <ul><li *ngFor ="let i of patient.medications">{{ i }}</li></ul>
+  </div>
 
 </div>
 
