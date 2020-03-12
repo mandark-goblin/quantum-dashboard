@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "quantum-dashboard"
+  "defaultProject": "quantum-dashboard",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -13,6 +13,7 @@ export class UserFormComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    
     this.myForm = this.fb.group({
       'f_name': '',
       'l_name': '',

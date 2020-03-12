@@ -1,12 +1,25 @@
-<form [formGroup]="myForm">
-  
-  Value: {{ myForm.value | json }}
 
-  <hr>
+<form [formGroup]="myForm" class="pre-assesment-form">
 
-  <mat-form-field>
-    <input matInput placeholder="first" formControleNamr="f_name">
+  <mat-form-field appearance="fill" color="accent">
+    <mat-label>First Name</mat-label>
+    <input matInput type="text" formControlName="f_name">
   </mat-form-field>
 
+  <mat-form-field appearance="fill" color="accent">
+    <mat-label>Last    Name</mat-label>
+    <input matInput type="text" formControlName="l_name">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" color="accent">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" color="accent">
+    <mat-label>Phone</mat-label>
+    <input matInput type="tel" formControlName="phone">
+  </mat-form-field>
+  
 </form>
 
